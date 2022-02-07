@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Short+Stack&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+    background-color: #07031A;
+    margin: 0%;
+    text-align: center;
+}
+
+.main-container,
+.books-area,
+.menu,
+.books-table,
+.btn {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F4F6FF;
+    width: 100vw;
+    height: 100vh;
+}
+
+.filter {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F6FF;
+    width: 35%;
+    height: 20%;
+    border-radius: .4em;
+    color: #396EB0;
+    font-size: 5em;
+}
+
+.books-area {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    background-color: #396EB0;
+    border-radius: .4em;
+}
+
+.books-table {
+    position: absolute;
+    top: 7%;
+    background-color: #F4F6FF;
+    border-radius: .3em;
+    width: 90%;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 40%;
+    height: 40%;
+    background-color: #F4F6FF;
+    z-index: 1;
+    border-radius: .3em;
+    top: 2%;
+}
+
+tr,
+th,
+td {
+    width: 21%;
+    height: 1.2em;
+}
+
+.btn {
+    width: 4em;
+    height: 1.5em;
+    margin: 1.2%;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    opacity: 60%;
+}
+
+.create-new-btn {
+    position: absolute;
+    top: 2%;
+    width: 20%;
+}
+
+.read-btn {
+    background-color: lightgreen;
+}
+
+.remove-btn {
+    background-color: lightsalmon;
+}
+
+.update-btn {
+    background-color: lightblue;
+}
+
+.menu div,
+input {
+    margin: .5em;
+    box-shadow: none;
+    display: flex;
+    width: 7.5em;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.update-book-menu {
+    height: 50%;
+    width: 40%;
+}
+
+.small {
+    display: inline-block;
+    width: 18%;
+}
+
+.read-book-menu {
+    height: 80%;
+    width: 50%;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.sort {
+    position: absolute;
+    left: 12%;
+    top: 2%;
+}
+
+.sort-desc {
+    float: right;
+    width: fit-content;
+}
+
+.sort-by {
+    float: right;
+}
+
+.pages {
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    background-color: #F4F6FF;
+    width: 18%;
+}
+
+.page-counter {
+    width: 1.5em;
+    width: 20%;
+}
+
+.btn-prev {
+    width: 40%;
+}
+
+.btn-next {
+    width: 40%;
+}
+
+label {
+    color: #F5F2E7
+}
+
+.remove-book {
+    background-color: lightsalmon;
+}

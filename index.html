@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My book store</title>
+</head>
+
+<body onload="onInit()">
+    <div class="main-container">
+        <header></header>
+        <div class="filter">Book Store</div>
+        <div class="books-area">
+            <div class="menu hide"></div>
+            <div class="sort">
+                <select class="sort-by" onchange="onSetSortBy()">
+                    <option value="">Select Sorting</option>
+                    <option value="price">By Price</option>
+                    <option value="title">By Name</option>
+                </select>
+                <label>
+                    Descending:
+                    <input class="sort-desc" type="checkbox" oninput="onSetSortBy()" />
+                </label>
+            </div>
+            <button class="create-new-btn" onclick="onAddMenu()">Add New Book</button>
+            <table class="books-table"></table>
+            <div class="pages">
+                <button class="btn-prev" onclick="onPrevPage()">Previous</button>
+                <div class="page-counter">0</div>
+                <button class="btn-next" onclick="onNextPage()">Next</button>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+
+
+    <script src="js/store-services/utils.js"></script>
+    <script src="js/store-services/storage.js"></script>
+    <script src="js/store-services/services.js"></script>
+    <script src="js/store.controller.js"></script>
+</body>
+
+</html>
